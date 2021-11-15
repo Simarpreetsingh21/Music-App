@@ -1,0 +1,178 @@
+/* things to mend 
+1. sizze
+2. play button color  */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap');
+
+*::before, 
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Bai Jamjuree', sans-serif;
+  background-color: #001427;
+}
+
+.main_div {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.music_container {
+    width: 21rem;
+    height: 32.6rem;
+    background-color: #FE5F55;
+    border-radius: 2rem;
+    box-shadow: 0 1.2rem 3rem 0.5rem rgb(0 0 0 / 20%);
+    padding: 3rem;
+    text-align: center;
+}
+
+.music_container #title {
+  text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    word-spacing: 0.5rem;
+    color: #f6f6f6;
+    margin: -1.5rem 0 0.5rem 0;
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-shadow: 0 0.3rem 0.5rem rgb(0 0 0 / 30%);
+}
+  
+  .music_container #artist {
+    color: #f6f6f6;
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 0.8rem;
+    text-shadow: 0 0.3rem 0.5rem rgb(0 0 0 / 30%);
+
+}
+
+.img-container {
+  width: 25rem;
+  height: 25rem;
+  margin: auto;
+}
+
+img {
+  border: 2px solid #f6f6f6;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 1.2rem 3 rem 0.5rem rgba(0, 0, 0, 0.4);
+}
+
+.music_controls{
+    width: 20rem;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.music_controls .fas {
+  color: #001427;
+  font-size: 2rem;
+  cursor: pointer;
+  filter: drop-shadow(0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.4));
+}
+
+.music_controls #play {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: #001427;
+  color: #f6f6f6;
+  font-size: 1.4rem; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.music_controls #prev, #play, #next {
+  cursor: pointer;
+}
+
+.music_controls .fas:hover{ 
+  color: grey;
+  cursor: pointer;
+}
+
+.music_controls #play:hover{
+  background-color: white;
+  color: #001427;
+}
+
+.music_controls #prev:hover, .music_controls #next:hover{
+  color: white;
+}
+
+.progress-container {
+  width: 100%;
+  height: auto;
+  padding: 1rem 0;
+}
+
+.progress-div {
+  width: 100%;
+  height: 0.5rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+
+  border-radius: 4rem;
+  position: relative;
+  margin-top: 0.5rem;
+  transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  -o-transition: all 1s linear;
+  -webkit-transition: all 1s linear;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10%;
+  height: 100%;
+  background-color: white;
+  border-radius: 4rem;
+  transition: width 1s linear;
+  -moz-transition: width 1s linear;
+  -o-transition: width 1s linear;
+  -webkit-transition: width 1s linear;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.progress-duration {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  margin-top: -1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

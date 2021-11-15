@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="main_div">
+        <div class="music_container">
+            <h2 id="title">THE SEARCH</h2>
+            <h3 id="artist">NF</h3>
+
+            <div class="img_container">
+                <img src="images/NF- search.png" alt="">
+            </div>
+            <audio src="songs/NF- search.mp3" ></audio>
+
+            <!-- progress bar  -->
+        <div class="progress-container" id="progress-container">
+            <div class="progress-duration">
+                <div id="current-time">0:00</div>
+                <div id="duration">4:51</div>
+            </div>
+            <div class="progress-div" id="progress-div">
+                <div class="progress" id="progress"></div>    
+            </div>
+        </div>            
+
+            <!-- controls -->
+            <div class="music_controls">
+                <i class="fa-solid fa-backward" id="prev" title="Previous"></i>
+                <i class="fa-solid fa-play" id="play" title="Play/Pause"></i>
+                <i class="fa-solid fa-forward" id="next" title="Next"></i>
+            </div>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+
+</body>
+</html>
